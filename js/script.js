@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const linkElems = document.querySelectorAll("a.row-item")
-    linkElems.forEach((link, idx) => {
+    linkElems.forEach((link) => {
         link.addEventListener("click", (e) => {
             e.preventDefault()
             const timeout = setTimeout(() => {
