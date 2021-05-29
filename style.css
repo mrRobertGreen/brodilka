@@ -1,0 +1,135 @@
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    background: url("https://s1.1zoom.me/big0/124/Texture_Multicolor_526935_1280x853.jpg") 0 0/ 100% 100%;
+}
+
+.card {
+    padding: 30px;
+    height: 125px;
+    width: 420px;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+    top: calc(50% - 62.5px);
+    left: calc(50% - 210px);
+}
+
+.card .title {
+    margin-bottom: 20px;
+}
+
+.card a {
+    text-decoration: underline;
+    color: red;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    padding: 20px;
+}
+
+.row-item {
+    display: block;
+    flex: 0 0 20%;
+    height: 50%;
+    margin-right: 20px;
+}
+
+.row-item:last-child {
+    margin-right: 0;
+}
+
+.row-item.main {
+    flex: 1 1 60%;
+    height: 100%;
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.name {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 15px;
+    text-transform: lowercase;
+}
+
+.row-item.main .name {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* Custom */
+.wrapper.red {
+    color: #000;
+    background: url("./images/red-bg.jpg")0 0/100% 100%;
+}
+
+.wrapper.pink {
+    background: url("./images/pink-bg.jpg")0 0/100% 100%;
+}
+
+.wrapper.blue {
+    background: url("./images/blue-bg.jpg")0 0/100% 100%;
+}
+
+.wrapper.green {
+    background: url("./images/green-bg.jpg")0 0/100% 100%;
+}
+
+.wrapper.yellow {
+    background: url("./images/yellow-bg.jpg")0 0/100% 100%;
+}
+
+.random-btn {
+    background: #fff;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    border-radius: 10px;
+}
+
+@keyframes go-top {
+    0% {
+    }
+
+    70% {
+        transform: translateY(50px) scale(1.2, 1.2) rotate(20deg);
+    }
+    100% {
+        transform: translateY(-1000px) scale(0.01, 0.01) rotate(-150deg);
+    }
+}
+@keyframes go-down {
+    0% {
+    }
+
+    70% {
+        transform: translateY(-50px) scale(1.2, 1.2) rotate(-20deg);
+    }
+    100% {
+        transform: translateY(1000px) scale(0.01, 0.01) rotate(150deg);
+    }
+}
